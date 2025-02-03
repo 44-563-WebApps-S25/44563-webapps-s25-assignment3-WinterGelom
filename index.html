@@ -37,6 +37,21 @@
             <li>Lima Beans</li>
             <li>Black eyed peas</li>
         </ul>
+        <hr>
+        <h3>Code examples</h3>
+        <p>The code below replace a string in a file using the writeFile method.</p>
+        <pr>
+            const fileSystem = require('fs');
+            const editFile = (fileName, text) => {
+                fileSystem.writeFile(fileName, text, (error) => {
+                    if (error) throw error;
+                    console.log('Replaced the file!');
+                });
+            }
+        </pr>
+        <a href="https://code.pieces.app/collections/node-js">More Information about the code.</a>
+        <hr>
+        <h3>Links</h3>
         <a href="myMovie.html">My Favorite Movie</a>
     </body>
 </html>
